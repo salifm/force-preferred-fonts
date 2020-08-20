@@ -1,0 +1,19 @@
+{
+	"name": "Force preferred fonts",
+	"version": "0.1",
+	"description": "Force sites to use the preferred fonts over the author's",
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*",
+				"file://*/*"
+			],
+			"js": [
+				"monospace.js"
+			],
+			"run_at": "document_idle"
+		}
+	],
+	"manifest_version": 2
+}
